@@ -65,7 +65,7 @@ st.markdown("""
             transform: translateY(-2px);
         }
     </style>
-""", unsafe_allowed_html=True)
+""", unsafe_allow_html=True)
 
 # Helper function to load data
 @st.cache_data
@@ -99,8 +99,8 @@ df_segments = load_segments()
 df_anom = load_anomalies()
 
 # Sidebar Navigation
-st.sidebar.markdown("<h2 style='text-align: center; color: #38bdf8;'>Xylofy AI</h2>", unsafe_allowed_html=True)
-st.sidebar.markdown("<p style='text-align: center; color: #94a3b8; font-size: 14px;'>Demand Intelligence System</p>", unsafe_allowed_html=True)
+st.sidebar.markdown("<h2 style='text-align: center; color: #38bdf8;'>Xylofy AI</h2>", unsafe_allow_html=True)
+st.sidebar.markdown("<p style='text-align: center; color: #94a3b8; font-size: 14px;'>Demand Intelligence System</p>", unsafe_allow_html=True)
 st.sidebar.write("---")
 
 page = st.sidebar.radio(
